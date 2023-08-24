@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En esta pagina encontraras mi experiencia y conocimientos">
+    <meta name="keywords" content="html,javascript,css,ruby,java,programación,software,diseñoweb">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Portafolio Alejandra Canache</title>
+</head>
+
+<body>
+
+    <!--encabezado-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="./assets/images/logo3.svg" width="50px" height="50 px" alt="logo">
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Acerca</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#studie" class="nav__link">Proyectos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://vainillaweb.notion.site/Mi-Cerebro-En-JavaScript-f67dd66e8b3043ecad6ed5ca632e127d?pvs=4" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contacto</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+                <img src="./assets/images/logo.svg" alt="logo" class="nav__img" />
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-grid-alt"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main"> 
+			<section class="home" id="home">
+				<div class="swiper home-swiper">
+						<div class="swiper-wrapper">
+								<section class="swiper-slide">
+										<div class="home__content">
+												<div class="home__group">
+														<div class="home__indicator"></div>
+														<h2 class="home__slide-title typing-animation" id="title-frontend">Frontend Developer</h2>
+														<p class="home__slide-description">"Creando interfaces de usuario geniales"</p>
+												</div>
+										</div>
+								</section>
+								<section class="swiper-slide">
+										<div class="home__content">
+												<div class="home__group">
+														<div class="home__indicator"></div>
+														<h2 class="home__slide-title typing-animation" id="title-backend">Backend Developer</h2>
+														<p class="home__slide-description">"Impulsando las aplicaciones detrás de escena"</p>
+												</div>    
+										</div>
+								</section>
+								<section class="swiper-slide">
+										<div class="home__content">
+												<div class="home__group">
+														<div class="home__indicator"></div>
+														<h2 class="home__slide-title typing-animation" id="title-fullstack">Full Stack Developer</h2>
+														<p class="home__slide-description">"Dando vida a ideas de principio a fin"</p>
+												</div>
+										</div>
+								</section>
+						</div>
+						<div class="swiper-pagination"></div>
+				</div>
+		</section>
+		
+
+        <!--Acerca de-->
+        <section class="about" id="about">
+            <div class="video-background">
+                <video autoplay loop muted class="video">
+                    <source src="./assets/video/name.mp4" type="video/mp4"  alt="video">
+                </video>
+            </div>
+            <div class="about__container ">
+                <div class="about__data">
+                    <div class="button-container">
+											<a class="button" href="./about.html">
+													<span>Quien Soy</span>
+											</a>
+									</div>
+									
+                </div>
+            </div>
+        </section>
+
+        <!--proyect-->
+        <section class="section studie" id="studie">
+          <div class="studie_container container grid">
+            <div class="gallery-item">
+              <img src="./assets/images/KESUR.svg" alt="proyecto de market saludable">
+              <div class="overlay">
+                <h4 class="pro">KéSur: "Desde el Corazón del Sur". <br> Proyecto realizado en 2022</h4>
+                <a href="./assets/video/kesur.mp4" target="_blank" class="web_kesur">
+                  <i class='bx bx-cart-add'></i>
+                </a>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="./assets/images/IMPORTADORA.svg" alt="proyecto_importadora_repuestos">
+              <div class="overlay">
+                <h4 class="pro">Importadora Strip Center. <br> Proyecto realizado en 2022</h4>
+                <a href="./assets/video/importadora.mp4" target="_blank" class="web_importadora">
+                  <i class='bx bxs-car'></i>
+                </a>
+              </div>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="./assets/images/PARALLAX.svg" alt="proyecto_parallax">
+              <div class="overlay">
+                <h3 class="pro">Prototipo de portafolio parallax effect Mouse</h3>
+                <a href="https://acanavel.github.io/Acanavel/" target="_blank" class="parallax_effect">
+                    <i class='bx bxs-file-js'></i>
+                </a>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="./assets/images/CARGA.svg" alt="proyecto_carga_familiar">
+              <div class="overlay">
+                <h3 class="pro">Prototipo de sistema: calculo de Beneficios Trabajador</h3>
+                <a href="https://github.com/ACanavel" target="_blank" class="github-link">
+                  <i class="bx bxl-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="./assets/images/BACKEND.svg" alt="mini_proyectos_servidores">
+              <div class="overlay">
+                <h3 class="pro">Mini Proyectos Servidores Node.js</h3>
+                <a href="https://github.com/ACanavel/node.js" target="_blank" class="github-link">
+                  <i class="bx bxl-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="./assets/images/FIGMA.svg" alt="proyecto_app">
+              <div class="overlay">
+                <h3 class="pro">APP</h3>
+                <a href="assets/video/PROYECTO_APP.mp4" target="_blank" class="github-link">
+                    <i class='bx bxs-file-js'></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!--contacto-->
+        <section class="section contact" id="contact">
+            <div class="contact__container container">
+                <h2 class="section__title">Contacto</h2>
+                <p class="contact__description">¡Contáctame para cualquier consulta o colaboración!</p>
+                <a href="mailto:ing.marialejandracanache@gmail.com" class="contact-button button">Enviar Correo</a>
+                <div class="social-icons">
+                    <a href="https://github.com/ACanavel" target="_blank" class="footer__social-link">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/alejandracanache" target="_blank" class="footer__social-link">
+                        <i class="bx bxl-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+   
+    <!--scroll-->
+    <a href="#" class="scrollup" id="scroll-up"><i class="bx bx-up-arrow-alt scrollup__icon"></i></a>
+    <!--js-->
+    <!--scroll para que se revelen los elementos de forma suave-->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js" defer></script>
+    <!--deslizar elementos-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+    <script src="./assets/js/script.js" defer></script>
+
+</body>
+
+</html>
