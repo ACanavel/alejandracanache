@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --index: calc(1vw + 1vh);
+    --color-header: #474746;
+    --color-text: #9b9896;
+    --body-font: 'Poppins', sans-serif;
+    --body-color: background: rgb(0, 0, 0);
+      background: linear-gradient(333deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 35%, rgb(255, 255, 255) 100%);
+      --gallery-gap: calc(var(--index) * 7.5)
+    
+}
+
+h1,h2,h3 {
+  font-family: var(--body-font);
+}
+/* will-change */
+.content, .hero, .main-header, .gallery > * {
+	will-change: transform;
+}
+
+
+
+body{
+  background: var(--body-color);
+  color: var(--color-text);
+  font-family: var(--body-font);
+  overflow-x: hidden;
+}
+
+.hero{
+  width: calc(var(--index) * 30);
+  position: absolute;
+  left: 50vw;
+  top: 8vh;
+  z-index: -1;
+}
+
+.main-header{
+  height: 100vh;
+}
+
+.container{
+  padding: 0 7vw;
+
+}
+
+.main-title{
+  font-size: calc(var(--index) * 8);
+  position: absolute;
+  width: min-content;
+  bottom: 12vh;
+  line-height: -9;
+}
+
+.gallery{
+  display: flex;
+  padding: calc(var(--index) * 8) 0;
+}
+
+.gallery > * {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gallery__item{
+  max-width: calc(var(--index) * 21);
+  margin-bottom: var(--gallery-gap);
+  max-height: 180vh;
+  border-radius: 8px;
+}
+
+.gallery__left {
+margin-top: calc(var(--gallery-gap) * 1.75);
+}
+
+.gallery__right .gallery__item {
+  margin: 0;
+  margin-top: var(--gallery-gap);;
+}
+.text-block {
+  color: var(--color-text);
+  position: relative;
+}
+
+.text-block__h {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: var(--color-header);
+  margin-bottom: 1.5rem;
+}
+
+.text-block__p { 
+line-height: 1.75;
+text-align: justify;
+}
+
+.return {
+text-decoration: none;
+color: black;
+font-size: 40px;
+border-radius: 5px;
+}
+
+/*  tablet y móvil */
+@media (max-width: 768px) {
+  .gallery__item__right,
+  .gallery__item__left {
+      max-width: 100%;
+      margin-bottom: 40px;
+  }
+
+  .text-block__h {
+    font-size: 1.25rem; 
+    margin-bottom: 1rem;
+}
+
+.text-block__p {
+    font-size: 0.9rem; 
+    text-align: left; 
+}
+}
+
+
